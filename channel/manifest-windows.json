@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "version": "1.7.3.2",
+    "platform": "windows-x64",
+    "url": "https://github.com/securitycontrol-dev/SecurityControl-Updates/releases/download/v1.7.3.2/SecurityControl-Setup-1.7.3.2-Windows.exe",
+    "sha256": "f4c27e10155d86aaa5252aed76e00a78ce9c7e3e2de7983950107739518c3881",
+    "size": 34607213
+  },
+  "signature": "hG/uAk/J+cW5hKPaKoBUnlFT/Xf0nEOLebXQeZXuljLZ88HmG8iLyhE6ZgHSNkmD+tpyz+++7PLi4oQsmGPKCQ=="
+}
