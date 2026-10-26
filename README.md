@@ -16,6 +16,12 @@ Eine freigegebene Version kann enthalten:
 - SHA-256-Prüfsummen
 - Versionshinweise
 
+## Update-Verfahren ohne Apple-Developer-Account
+
+- **Windows:** geprüfte Updates werden bei geschlossenem Server und ohne offene Schichten nach verifizierter Sicherheitskopie automatisch installiert, sofern Windows die Ausführung zulässt. Ohne Codesignatur sind Sicherheitswarnungen möglich.
+- **macOS:** Updateprüfung und verifizierter Download; Installation bewusst manuell. Eine nicht notarisierte App kann durch Gatekeeper blockiert werden.
+- **Beide Systeme:** Noch kein aktiver Update-Feed. Erst nach Einrichtung einer vertrauenswürdigen Release-Signatur und Prüfung der veröffentlichten Pakete wird die Updatefunktion aktiviert.
+
 ## Sicherheit
 
 - Keine Quellcodes, Passwörter, Datenbanken, personenbezogenen Daten oder privaten Signaturschlüssel hier veröffentlichen.
