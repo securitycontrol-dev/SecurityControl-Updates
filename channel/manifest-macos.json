@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "version": "1.7.3.2",
+    "platform": "macos-universal",
+    "url": "https://github.com/securitycontrol-dev/SecurityControl-Updates/releases/download/v1.7.3.2/SecurityControl-1.7.3.2-macOS-app.zip",
+    "sha256": "de8e1aa5ceb2fa4c81b68ca7e98b2b393e49409cf321e04c3bcecce9d6410c68",
+    "size": 28581044
+  },
+  "signature": "6WfvjalXbOW0wF3TYAcbgqdRoLQcBqtBwthu/Av8jWAY8P8KFYh7sdjHWaG+rxKSZPgV3gOsKU9Su2IFfnqgDA=="
+}
