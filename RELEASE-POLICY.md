@@ -1,6 +1,6 @@
 # Release-Regeln
 
-Dieses Repository ist öffentlich. Nur freigegebene, signierte Binärdateien und zugehörige signierte Manifeste dürfen hier veröffentlicht werden.
+Dieses Repository ist öffentlich. Nur freigegebene Installationsdateien und zugehörige kryptografisch signierte Update-Manifeste dürfen hier veröffentlicht werden. Die Binärdateien selbst sind derzeit nicht betriebssystemseitig signiert.
 
 ## Release-Assets
 
@@ -23,10 +23,10 @@ Payload enthält exakt:
 - `sha256`: SHA-256 des Pakets (kleingeschrieben)
 - `size`: Dateigröße in Bytes
 
-Die Client-Anwendung muss den **öffentlichen** Schlüssel vor der Freigabe fest eingebaut bekommen. Der **private** Signaturschlüssel gehört niemals in dieses Repository, eine öffentliche GitHub Action oder ein Installationspaket.
+Die Client-Anwendung muss den **öffentlichen** Schlüssel vor der Aktivierung automatischer Updates fest eingebaut bekommen. Der **private** Signaturschlüssel gehört niemals in dieses Repository, eine öffentliche GitHub Action oder ein Installationspaket.
 
 ## Noch nicht aktiv
 
-Das derzeitige Desktop-Update-System ist absichtlich deaktiviert. Es fehlen die Freigabe eines vertrauenswürdigen Herausgebers und die Codesignierung/Notarisierung der Installationspakete. Keine unsignierten CI-Artefakte als automatisch installierbare Updates anbieten.
+Das derzeitige Desktop-Update-System ist absichtlich deaktiviert. Die erste Veröffentlichung erfolgt als Testversion (Prerelease) ohne Betriebssystem-Code-Signierung. macOS-Installationen sind manuell; Gatekeeper kann die App blockieren. Die Update-Funktion bleibt bis zur Einbindung des öffentlichen Ed25519-Schlüssels und erfolgreichen End-to-End-Tests deaktiviert. Keine unsignierten CI-Artefakte als automatisch installierbare Updates anbieten.
 
 Vor Aktivierung: Update- und Rollback-Tests mit geschlossenen und offenen Schichten, Archivprüfung, Sicherheitsbackup und Datenbankmigrationen auf Windows und macOS durchführen.
